@@ -8,82 +8,36 @@
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <style>
-        .left-sidebar {
-            /* background-color: aqua; */
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 15%;
-            /* height: 93vmin; */
-            border-radius: 15px;
-            border: 1px solid black;
-
-        }
-        .right-sidebar {
-            /* background-color: aqua; */
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 15%;
-            /* height: 93vmin; */
-            border-radius: 15px;
-            border: 1px solid black;
-        }
-        .main {
-            /* background-color: rgb(252, 163, 163); */
-            position: relative;
-            display: flex;
-            flex-direction: column;
-            width: 70%;
-            /* height: 93vmin; */
-            border-radius: 15px;
-            border: 1px solid black;
-        }
-
-        .logo {
-            /* background-color: blueviolet; */
-            /* width: 100%; */
-            height: 10%;
-            border: 1px solid black;
-            display: flex;
-            /* justify-content: center; */
-            align-items: center;
-            font-size:x-large;
-        }
-
-        .menu, .collection, .discover, .settings{
-            flex: 1;
-            border: 1px solid black;
+        .search-bar {
+            height: 5%;
             text-align: center;
-            /* width: 100%; */
+            
+        }
+        .search-bar #song-search{
+            background-color: rgba(0, 0, 0, 0.404);
+            color: white;
+            width: 95%;
+            height: 75%;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 0px 5px;
         }
 
-        img {
-            height: 100%;
-            width: auto;
-        }
-        .main-section ul li{
-            list-style-type: none;
-        }
-        /* .menu {
-            background-color: rgb(101, 88, 114);
+        .banner {
+            height: 45%;
             
         }
 
-        .collection {
-            background-color: rgb(229, 204, 255);
+        .banner img {
             width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 20px;
         }
 
-        .discover {
-            background-color: rgb(169, 84, 255);
-            width: 100%;
+        .popular-list {
+            height: 50%;
         }
-
-        .settings {
-            background-color: rgb(31, 8, 54);
-            width: 100%;
-        } */
     </style>
 </head>
 
@@ -91,47 +45,59 @@
 <body>
     <section class="main-section">
 
-            <div class="left-sidebar">
-                <span class="logo">
-                    <img src="Logo.png" alt="App-Logo">
-                    <p><strong>Cadence</strong></p>
-                </span>
-                <div class="menu">
-                    <ul>
-                        <li>Home</li>
-                        <li>Trends</li>
-                        <li>Library</li>
-                    </ul>
-                </div>
-                <div class="discover">
-                    <ul>
-                        <li>Playlist</li>
-                        <li>Podcast</li>
-                        <li>Daily Mix</li>
-                    </ul>
-                </div>
-                <div class="collection">
-                    <ul>
-                        <li>Liked songs</li>
-                        <li>Favourite Artists</li>
-                        <li>Local</li>
-                    </ul>
-                </div>
-                <div class="settings">
-                    <ul>
-                        <li>Settings</li>
-                        <li>Log Out</li>
-                    </ul>
-                </div>
+        <div class="left-sidebar">
+            <span class="logo">
+                <img src="Logo.png" alt="App-Logo">
+                <p><strong>Cadence</strong></p>
+            </span>
+            <div class="menu">
+                <ul>
+                    <li id="heading">Menu</li>
+                    <li>Home</li>
+                    <li>Trends</li>
+                    <li>Library</li>
+                </ul>
             </div>
-
-            <div class="main">
-
+            <div class="discover">
+                <ul>
+                    <li id="heading">Discover</li>
+                    <li>Playlist</li>
+                    <li>Podcast</li>
+                    <li>Daily Mix</li>
+                </ul>
             </div>
-
-            <div class="right-sidebar">
-
+            <div class="collection">
+                <ul>
+                    <li id="heading">Collection</li>
+                    <li>Liked songs</li>
+                    <li>Favourite Artists</li>
+                    <li>Local</li>
+                </ul>
             </div>
+            <div class="settings">
+                <ul>
+                    <li id="heading">Settings</li>
+                    <li>Settings</li>
+                    <li>Log Out</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="search-bar">
+                <input type="search" name="song-search" id="song-search">
+            </div>
+            <div class="banner">
+                <img src="bg.jpg" alt="Background Image">
+            </div>
+            <div class="popular-list">
+                Popular list
+            </div>
+        </div>
+
+        <div class="right-sidebar">
+
+        </div>
 
     </section>
 
