@@ -14,38 +14,22 @@ body {
     background-color: rgba(122, 121, 121, 0.404);
     border-radius: 15px;
 }
+
 .main-top {
     height: 90%;
     width: 100%;
-    /* margin: 20px auto; */
-    /* background-color: rgba(95, 95, 95, 0); */
     border-radius: 15px;
     display: flex;
 }
+
+
+/* Left Sidebar Start*/
 
 .left-sidebar {
     position: relative;
     display: flex;
     flex-direction: column;
     width: 15%;
-    border-radius: 15px;
-}
-
-.right-sidebar {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 15%;
-    border-radius: 15px;
-    border: 1px solid black;
-}
-
-.middle {
-    padding: 20px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 70%;
     border-radius: 15px;
 }
 
@@ -79,3 +63,88 @@ body {
     font-weight: bold;
     color: rgb(41, 33, 40);
 }
+
+/* Left Sidebar End*/
+
+
+/* Middle Start*/
+
+.middle {
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    border-radius: 15px;
+}
+
+.search-bar {
+    height: 7%;
+    text-align: center;
+}
+
+.search-bar #song-search {
+    background-color: rgba(0, 0, 0, 0.404);
+    color: white;
+    width: 95%;
+    height: 75%;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 0px 5px;
+}
+
+.banner {
+    height: 45%;
+    padding: 10px 0px;
+
+}
+
+.banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.popular-list {
+    height: 50%;
+    padding: 10px 0px;
+    overflow-y: scroll;
+}
+
+.popular-list table {
+    width: 100%;
+    text-align: center;
+}
+
+.popular-list table tr {
+    height: 40px;
+}
+
+/* Middle End*/
+
+
+/* Right Sidebar Start*/
+
+.right-sidebar {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    border-radius: 15px;
+    border: 1px solid black;
+}
+
+/* Right Sidebar End*/
+
+/* Music Player Start*/
+
+.main-bottom {
+    background-color: rgba(122, 121, 121, 0.205);
+    border: 1px solid black;
+    border-radius: 15px;
+    height: 10%;
+    width: 100%;
+}
+
+/* Music Player End*/
