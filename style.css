@@ -31,6 +31,7 @@ body {
     flex-direction: column;
     width: 15%;
     border-radius: 15px;
+    padding: 5px;
 }
 
 .logo {
@@ -132,7 +133,21 @@ body {
     flex-direction: column;
     width: 15%;
     border-radius: 15px;
+    padding: 5px;
+    justify-content: center;
+    text-align: center;
     border: 1px solid black;
+}
+.profile{
+    height: 7%;
+}
+.profile-options{
+    background-color: rgba(0, 0, 0, 0.404);
+    border-radius: 10px;
+}
+
+.top-picks, .notifications, .recent-playlist{
+    flex: 1;
 }
 
 /* Right Sidebar End*/

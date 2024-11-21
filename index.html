@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadence</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="Logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <style>
-        
+
 
 
     </style>
@@ -133,12 +135,32 @@
             </div>
 
             <div class="right-sidebar">
-
+                <div class="profile">
+                    <select name="profile" id="profile" class="profile-options">
+                        <option value="profile">Suvam</option>
+                        <option value="sign-in">Sign In</option>
+                        <option value="log-out">Log Out</option>
+                    </select>
+                </div>
+                <div class="top-picks">
+                    Today's Top Picks
+                </div>
+                <div class="notifications">
+                    Notifications
+                </div>
+                <div class="recent-playlist">
+                    Recent Playlists
+                </div>
             </div>
         </div>
 
         <div class="main-bottom">
-            
+            <div class="music-player">
+                <button id="play-pause" type="button"></button>
+                <audio id="audio">
+                    <source src="Pehle Bhi Main.mp3" type="audio/mp3">
+                </audio>
+            </div>
         </div>
     </div>
 
