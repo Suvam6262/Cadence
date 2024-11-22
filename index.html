@@ -109,27 +109,6 @@
                             <td>2024</td>
                             <td>1.53</td>
                         </tr>
-                        <tr>
-                            <td>6</td>
-                            <td>Song Name</td>
-                            <td>Artist Name</td>
-                            <td>2024</td>
-                            <td>1.53</td>
-                        </tr>
-                        <tr>
-                            <td>7</td>
-                            <td>Song Name</td>
-                            <td>Artist Name</td>
-                            <td>2024</td>
-                            <td>1.53</td>
-                        </tr>
-                        <tr>
-                            <td>8</td>
-                            <td>Song Name</td>
-                            <td>Artist Name</td>
-                            <td>2024</td>
-                            <td>1.53</td>
-                        </tr>
                     </table>
                 </div>
             </div>
@@ -156,10 +135,16 @@
 
         <div class="main-bottom">
             <div class="music-player">
-                <button id="play-pause" type="button"></button>
-                <audio id="audio">
-                    <source src="Pehle Bhi Main.mp3" type="audio/mp3">
-                </audio>
+                <button type="button" id="next-track"><i class="fas fa-step-backward"></i></button>
+                <button id="play-pause" type="button"><i class="fas fa-play"></i></button>
+                <audio id="audio"></audio>
+                <button type="button" id="next-track"><i class="fas fa-step-forward"></i></button>
+                <label for="song-duration">
+                    <input type="range" name="song-duration" id="song-duration" width="100%">
+                </label>
+                <label for="song-volume">
+                    <input type="range" name="song-volume" id="song-volume">
+                </label>
             </div>
         </div>
     </div>

@@ -162,4 +162,26 @@ body {
     width: 100%;
 }
 
+input[type = "range"]{
+    appearance: none;
+    background: #610F7F;
+    outline: none;
+    border-radius: 20px;
+    height: 5px;
+}
+
+input[type = "range"]::-webkit-slider-thumb{
+    appearance: none;
+    height: 8px;
+    width: 8px;
+    border-radius: 5px;
+    background: black;
+}
+#song-duration{
+    width: 40%;
+}
+
+#song-volume{
+    width: 5%;
+}
 /* Music Player End*/
